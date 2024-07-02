@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ujjwal Dhiman</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sidebars/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet"> -->
+    <link href="sidebars.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="d-flex">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" id="sidebar">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <h2 class="fs-4">Ujjwal Dhiman</h2>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <!-- <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse" aria-expanded="true">
+                        Home
+                    </button>
+                    <div class="collapse show" id="home-collapse" style>
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
+                            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
+                        </ul>
+                    </div>
+                </li> -->
+                <li class="nav-item">
+                    <a href="#home" class="nav-link text-white" aria-current="page">
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#home"></use>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#speedometer2"></use>
+                        </svg>
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#table"></use>
+                        </svg>
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#grid"></use>
+                        </svg>
+                        Experience
+                    </a>
+                </li>
+                <li>
+                    <a href="#education" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#people-circle"></use>
+                        </svg>
+                        Education
+                    </a>
+                </li>
+                <li>
+                    <a href="#resume" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#people-circle"></use>
+                        </svg>
+                        Resume
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16">
+                            <use xlink:href="#people-circle"></use>
+                        </svg>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <!-- <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>mdo</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div> -->
+        </div>
+
+        <div class="content flex-grow-1">
+            <section id="home" class="jumbotron text-center">
+                <h1 class="display-4">Welcome to My Portfolio</h1>
+                <p class="lead">Hello, I'm Ujjwal Dhiman, passionate about translating raw data into valuable insights
+                    that propel business growth and innovation.</p>
+            </section>
+
+            <!-- About Me Section -->
+            <section id="about" class="container my-0">
+                <h2 class="text">About Me</h2>
+                <div class="col-md-12">
+                    <div class="row g-0  overflow-hidden flex-md-row mb-4  h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+
+                            <p class="card-text mb-auto">I am a seasoned Data Analyst with a strong command of SQL,
+                                Excel, Power BI, and Python, adept at
+                                translating complex
+                                data sets into actionable insights that inform strategic decisions. My proficiency
+                                extends to
+                                technical skills such as
+                                SQL (including Window Functions, CTEs, Joins, Sub-query, Indexing), VBA, Power Query,
+                                DAX, and
+                                Postgres, enabling me to
+                                conduct thorough data analytics, visualization, and extraction/manipulation tasks. I
+                                excel in
+                                problem-solving, using
+                                analytical thinking to identify trends and hypotheses crucial for business optimization.
+                                Additionally, I am skilled in
+                                implementing ETL/ELT processes and utilizing tools like Power BI Desktop, Jupyter
+                                Notebook, and
+                                GitHub for efficient
+                                project management and collaboration. My soft skills include effective communication,
+                                presentation,
+                                and documentation
+                                abilities, ensuring clear and concise delivery of insights and solutions to
+                                stakeholders.</p>
+
+                            <br>
+                            <h3 class="mb-0">Skills</h3>
+                            <hr>
+                            <div class="row row-cols-1 row-cols-md-6 gx-4 text">
+                                <div class="col themed-grid-col"><code>SQL</code><code></code></div>
+                                <div class="col themed-grid-col"><code>CTEs</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Joins</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Indexing</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Sub-Query</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Stored Procedures</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Microsoft Excel</code><code></code></div>
+                                <div class="col themed-grid-col"><code>VBA</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Power BI</code><code></code></div>
+                                <div class="col themed-grid-col"><code>DAX Query</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Power Query</code><code></code></div>
+                                <div class="col themed-grid-col"><code>PostgreSQL</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Python</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Pandas</code><code></code></div>
+                                <div class="col themed-grid-col"><code>NumPy</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Data Extraction</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Data Cleaning</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Data Transforming</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Data Manipulation</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Data Visualization</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Data Analysis</code><code></code></div>
+                                <div class="col themed-grid-col"><code>Hypothesis Testing</code><code></code></div>
+                                <div class="col themed-grid-col"><code>ETL</code><code></code></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="container my-0">
+                <h2 class="text">Projects</h2>
+                <br>
+                <div class="col-md-12">
+                    <h3 class="mb-0">Power BI</h3>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                        <div class="feature col">
+                            <h4 class="fs-2 text-body-emphasis">Credit Card Financial Dashboard</h4>
+                            <p>Developed an interactive Power BI dashboard using transaction and
+                                customer data from a SQL database to provide
+                                real-time insights and streamlined the data processing and analysis for monitoring
+                                key performance metrics and trends.</p>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiYzgzNjZlNjktOTMzNi00YzNlLThlMDQtZTk5YzgzODQzODczIiwidCI6IjJhYWZmMjkxLTNkYjItNGZlNy1hNzY3LWJlY2ZjZGM2ZjUxNiJ9"
+                                target="_blank" class="icon-link">
+                                View Report
+                            </a>
+                        </div>
+                        <div class="feature col">
+                            <h4 class="fs-2 text-body-emphasis">E-Commerce Sales Analysis</h4>
+                            <p>Developed and published an interactive Power BI report for
+                                e-commerce sales data, enabling real-time data analysis and
+                                visualization for improved decision-making.</p>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiMzczY2FlZGUtNzIyZC00YzUzLTkyODItNDNjZmM4ZWVmYjhkIiwidCI6IjJhYWZmMjkxLTNkYjItNGZlNy1hNzY3LWJlY2ZjZGM2ZjUxNiJ9"
+                                target="_blank" class="icon-link">
+                                View Report
+                            </a>
+                        </div>
+                        <!-- <div class="feature col">
+                        <h4 class="fs-2 text-body-emphasis">Featured title</h4>
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence and
+                            probably just keep going until we run out of words.</p>
+                        <a href="#" class="icon-link">
+                            Call to action
+                        </a>
+                    </div> -->
+                    </div>
+
+                    <hr>
+
+                    <h3 class="mb-0">SQL</h3>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                        <div class="feature col">
+                            <h4 class="fs-2 text-body-emphasis">Music Store Analysis</h4>
+                            <p>Conducted in-depth analysis of a music store data using SQL to
+                                derive insights such as identifying senior employees,
+                                top-spending customers, and popular music genres by country.</p>
+                            <a href="https://github.com/ujjwal-dhiman-ai/music-store-analysis" target="_blank"
+                                class="icon-link">
+                                GitHub
+                            </a>
+                        </div>
+                        <div class="feature col">
+                            <h4 class="fs-2 text-body-emphasis">Retail Store Analysis</h4>
+                            <p>Implemented an end-to-end data analytics ETL pipeline using Python,
+                                SQL and Kaggle to download, clean, and process a
+                                Kaggle dataset, load it into a PostgreSQL, and perform comprehensive data analysis,
+                                using SQL.</p>
+                            <a href="https://github.com/ujjwal-dhiman-ai/retail-store-analysis" target="_blank"
+                                class="icon-link">
+                                GitHub
+                            </a>
+                        </div>
+                        <!-- <div class="feature col">
+                            <h4 class="fs-2 text-body-emphasis">Featured title</h4>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                                sentence and
+                                probably just keep going until we run out of words.</p>
+                            <a href="#" class="icon-link">
+                                Call to action
+                            </a>
+                        </div> -->
+                    </div>
+                    <hr>
+
+                    <h3 class="mb-0">Python</h3>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                        <div class="feature col">
+                            <h4 class="fs-2 text-body-emphasis">CSV to PostgreSQL Data Pipeline</h4>
+                            <p>Developed a python data pipeline for uploading CSV files to a PostgreSQL database.
+                                Utilized
+                                Pandas for data processing,
+                                psycopg2 for database connectivity, and implemented dynamic table creation and data
+                                insertion.
+                                – Automated the process with a command-line interface for flexibility in insertion modes
+                                and
+                                schema selection.</p>
+                            <a href="https://github.com/ujjwal-dhiman-ai/csv-to-postgres" target="_blank"
+                                class="icon-link">
+                                GitHub
+                            </a>
+                        </div>
+                        <!-- <div class="feature col">
+                            <h4 class="fs-2 text-body-emphasis">Retail Store Analysis</h4>
+                            <p>Implemented an end-to-end data analytics ETL pipeline using Python,
+                                SQL and Kaggle to download, clean, and process a
+                                Kaggle dataset, load it into a PostgreSQL, and perform comprehensive data analysis,
+                                using SQL.</p>
+                            <a href="https://github.com/ujjwal-dhiman-ai/retail-store-analysis" target="_blank" class="icon-link">
+                                GitHub
+                            </a>
+                        </div>
+                        <div class="feature col">
+                            <h4 class="fs-2 text-body-emphasis">Featured title</h4 >
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                                sentence and
+                                probably just keep going until we run out of words.</p>
+                            <a href="#" class="icon-link">
+                                Call to action
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                <hr>
+
+            </section>
+
+
+
+            <!-- Experience Section -->
+            <section id="experience" class="container my-0">
+                <h2 class="text">Experience</h2>
+                <div class="col-md-12">
+                    <div class="row g-0  overflow-hidden flex-md-row mb-4  h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">Data Analyst</h3>
+                            <div class="mb-1 text-body-secondary"><i>May 2023 - January 2024</i>
+                            </div>
+                            <div>
+                                <strong class="d-inline-block mb-2 text-primary-emphasis">MapUp</strong>
+                            </div>  
+                            <p class="card-text mb-auto">I have leveraged Python scripts to automate manual tasks,
+                                significantly enhancing operational efficiency. I designed and
+                                implemented data flows using tools like Prefect, improving process flow visualization
+                                and clarity. </p><br>
+                                <p class="card-text mb-auto">Conducted API
+                                testing with Postman ensured data validation and integrity checks. I managed projects
+                                for new initiatives, creating and
+                                maintaining detailed process documentation. </p><br>
+                                <p class="card-text mb-auto">Additionally, I developed an automated ETL
+                                pipeline using cron jobs and
+                                GitHub Actions. Leading the Alternate Trip Route Analysis project, I optimized routes
+                                for toll and fuel cost savings,
+                                potentially saving $4M annually. </p><br>
+                                <p class="card-text mb-auto">Through geospatial analysis with QGIS for the Zip Code
+                                Toll Cost Analysis, I visualized
+                                regional toll cost disparities. I implemented a Data Quality Check Framework using
+                                Python and Great Expectations,
+                                ensuring data integrity and accuracy.</p><br>
+                                <p class="card-text mb-auto">Lastly, I developed and automated a Toll Data
+                                Pipeline to extract, transform and load
+                                toll data.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+            </section>
+
+            <!-- Projects Section -->
+            <section id="education" class="container my-0">
+                <h2 class="text">Education</h2>
+                <div class="col-md-12">
+                    <div class="row g-0  overflow-hidden flex-md-row mb-4  h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">B.Tech in Computer Science and Engineering</h3>
+                            <div class="mb-1 text-body-secondary"><i>August 2019 - June 2023</i>
+                            </div>
+                            <strong class="d-inline-block mb-2 text-primary-emphasis">Quantum University</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+            </section>
+
+
+            <!-- Resume Section -->
+            <section id="resume" class="container my-0">
+                <h2>Resume</h2>
+                <a href="https://drive.google.com/file/d/111Oj96qfkt5pDYjNiZ2bNouolQ0DH7wO/view?usp=sharing"
+                    class="btn btn-primary" target="_blank" download>Download My Resume</a>
+
+                <hr>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="container my-0">
+                <h2 class="text">Contact</h2>
+                <div class="col-md-12">
+                    <div class="row g-0  overflow-hidden flex-md-row mb-4  h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <div class="row row-cols-1 row-cols-md-4 gx-4 text">
+                                <div class="col themed-grid-col">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                    </svg>
+                                    <code><a href="https://www.linkedin.com/in/ujjwal-dhiman-ai/" target="_blank" class="icon-link">Linkedin</a></code>
+                                </div>
+                                <div class="col themed-grid-col">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg>
+                                    <a href="https://github.com/ujjwal-dhiman-ai" target="_blank" class="icon-link"><code>GitHUb</code></a>
+                                </div>
+                                <div class="col themed-grid-col">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                                        <path
+                                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+                                    </svg>
+                                    <a href="" target="_blank" class="icon-link"><code>ujjwaldhimanai@gmail.com</code></a>
+                            </div>
+                            <div class="col themed-grid-col">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-outbound-fill"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5" />
+                                </svg>
+                                <a target="_blank" class="icon-link"><code>+91-9389310752</code></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

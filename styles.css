@@ -1,0 +1,51 @@
+/* styles.css */
+
+.anton-sc-regular {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.profile-pic {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* Ensures the sidebar takes up the full height of the viewport */
+    width: 20%;
+    /* Set the width as per your design */
+    overflow-y: auto;
+    /* Allows the sidebar content to scroll if it overflows */
+}
+
+section{
+    width: 80%;
+    float: right;
+}
+.background-image {
+    width: 100%;
+    /* padding: 0 7%; */
+    display: table;
+    margin: 0;
+    background-size: cover;
+    max-width: none;
+    /* background-color: #373B44; */
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+    /*added here*/
+    background-image: url("image.jpg");
+    /*added here*/
+    }
+    
