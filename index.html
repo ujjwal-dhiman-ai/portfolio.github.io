@@ -5,22 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e8daac6d65.js" crossorigin="anonymous"></script>
 
     <title>Ujjwal Dhiman</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
         body {
             font-family: 'Ubuntu', sans-serif;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
         }
-        
+
         .wave-sec {
             width: 100%;
             height: 100vh;
@@ -28,7 +32,7 @@
             background: #062c66;
             overflow: hidden;
         }
-        
+
         .wave-sec .wave {
             position: absolute;
             bottom: 0;
@@ -38,7 +42,7 @@
             background: url(wave.png);
             background-size: 1000px 100px;
         }
-        
+
         .wave-sec .wave.wave1 {
             animation: animate1 30s linear infinite;
             z-index: 1000;
@@ -46,7 +50,7 @@
             animation-delay: 0s;
             bottom: 0;
         }
-        
+
         .wave-sec .wave.wave2 {
             animation: animate2 15s linear infinite;
             z-index: 999;
@@ -54,7 +58,7 @@
             animation-delay: -5s;
             bottom: 10px;
         }
-        
+
         .wave-sec .wave.wave3 {
             animation: animate2 15s linear infinite;
             z-index: 999;
@@ -62,7 +66,7 @@
             animation-delay: -2s;
             bottom: 15px;
         }
-        
+
         .wave-sec .wave.wave4 {
             animation: animate2 10s linear infinite;
             z-index: 997;
@@ -70,44 +74,48 @@
             animation-delay: -2s;
             bottom: 20px;
         }
-        
+
         @keyframes animate1 {
             0% {
                 background-position-x: 0;
             }
+
             100% {
                 background-position-x: 1000px;
             }
         }
-        
+
         @keyframes animate2 {
             0% {
                 background-position-x: 0;
             }
+
             100% {
                 background-position-x: -1000px;
             }
         }
+
         /* ----------Navbar CSS-------- */
-        
+
         .nav_bg {
             background-color: #062c66;
         }
-        
+
         .nav_font {
             font-size: 18px;
         }
-        
+
         .logoTextSize {
             font-size: 28px;
             font-weight: bold;
         }
-        
+
         .font-style {
             font-weight: bold;
         }
+
         /* ---------Fab Icon CSS--------- */
-        
+
         .fab {
             font-size: 28px;
             padding: 12px 12px;
@@ -115,43 +123,45 @@
             background-color: #01214e;
             border-radius: 50%;
         }
-        
+
         .fab:hover {
             color: blue;
         }
-        
+
         .midPage {
             transform: translateY(90%);
         }
-        
+
         .midPage h1 {
             color: white;
             font-size: 45px;
         }
-        
+
         .midPage p {
             color: white;
             font-size: 20px;
         }
-        
+
         .about {
             margin: 50px 0 60px 0;
         }
+
         /* ---------Skills Section CSS--------- */
-        
+
         .hide_icon {
             display: none;
         }
-        
+
         .skills {
             margin: 50px 0 60px 0;
         }
+
         /* ---------Project Section CSS--------- */
-        
+
         .projects {
             margin: 50px 0 60px 0;
         }
-        
+
         .projects .card {
             cursor: pointer;
             border-radius: 10px;
@@ -168,19 +178,19 @@
             box-shadow: 3px 10px 15px gray;
             transition: 0.5s;
         }
-        
+
         /* .fas {
             font-size: 28px;
             padding: 12px 12px;
             color: black;
         } */
-        
+
         .far {
             font-size: 28px;
             padding: 12px 12px;
             color: blue;
         }
-        
+
         .address {
             color: black;
             cursor: text;
@@ -188,7 +198,7 @@
             font-size: 18px;
             font-family: 'Ubuntu', sans-serif;
         }
-        
+
         .links p {
             margin-top: 10px !important;
             padding: 10px;
@@ -213,12 +223,13 @@
             margin-left: 10%;
             margin-right: 10%;
         } */
-        
-        
+
+
         @media only screen and (max-width: 991px) {
             .hide_icon {
                 display: block;
             }
+
             .show_icon {
                 display: none;
             }
@@ -233,9 +244,10 @@
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark nav_bg nav_font">
             <a class="navbar-brand logoTextSize mx-4" href="#">Ujjwal Dhiman</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -264,8 +276,8 @@
                     </li>
                 </ul>
             </div>
-    
-    </nav>
+
+        </nav>
     </div>
 
     <!-- Wave Section -->
@@ -279,38 +291,52 @@
         <!-- Home Section -->
 
         <section id="home" class="intro">
-            <br><br>
+            <!-- <br><br> -->
             <div class="container">
-                <br>
+                <!-- <br> -->
                 <div class="text-center midPage">
                     <h1 class="font-style">
                         Hello, I'm Ujjwal Dhiman.
                     </h1>
 
-                    <p class="mt-4 tagLine">Passionate about translating raw data into valuable insights that propel business growth and innovation.
+                    <p class="mt-4 tagLine">Passionate about translating raw data into valuable insights that propel
+                        business growth and innovation.
                     </p>
                     <p class="text-center links">
-                        <a href="https://www.linkedin.com/in/ujjwal-dhiman-ai/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/ujjwal-dhiman-ai/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="https://github.com/ujjwal-dhiman-ai" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </p>
                 </div>
-                <!-- <br> -->
+                <br><br><br><br>
             </div>
         </section>
     </section>
+
     <!-- About Us -->
     <div class="container">
         <section id="about" class="text-justified about mt-4">
             <br><br>
             <div class="row mt-4">
                 <div class="col-sm-4 text-center">
-                    <img src="https://raw.githubusercontent.com/ujjwal-dhiman-ai/portfolio.github.io/master/image.png" width="280px" alt="profile-image">
+                    <img src="https://raw.githubusercontent.com/ujjwal-dhiman-ai/portfolio.github.io/master/image.png"
+                        width="280px" alt="profile-image">
                 </div>
                 <div class="col-sm-8">
                     <h1 class="font-style mt-4">About Myself</h1>
-                    <p class="mt-4 mb-4">I am a seasoned Data Analyst with a strong command of SQL, Excel, Power BI, and Python, adept at translating complex data sets into actionable insights that inform strategic decisions. My proficiency extends to technical skills such as SQL (including Window Functions, CTEs, Joins, Sub-query, Indexing), VBA, Power Query, DAX, and Postgres, enabling me to conduct thorough data analytics, visualization, and extraction/manipulation tasks. I excel in problem-solving, using analytical thinking to identify trends and hypotheses crucial for business optimization. Additionally, I am skilled in implementing ETL/ELT processes and utilizing tools like Power BI Desktop, Jupyter Notebook, and GitHub for efficient project management and collaboration. My soft skills include effective communication, presentation, and documentation abilities, ensuring clear and concise delivery of insights and solutions to stakeholders.</p>
+                    <p class="mt-4 mb-4">I am a seasoned Data Analyst with a strong command of SQL, Excel, Power BI, and
+                        Python, adept at translating complex data sets into actionable insights that inform strategic
+                        decisions. My proficiency extends to technical skills such as SQL (including Window Functions,
+                        CTEs, Joins, Sub-query, Indexing), VBA, Power Query, DAX, and Postgres, enabling me to conduct
+                        thorough data analytics, visualization, and extraction/manipulation tasks. I excel in
+                        problem-solving, using analytical thinking to identify trends and hypotheses crucial for
+                        business optimization. Additionally, I am skilled in implementing ETL/ELT processes and
+                        utilizing tools like Power BI Desktop, Jupyter Notebook, and GitHub for efficient project
+                        management and collaboration. My soft skills include effective communication, presentation, and
+                        documentation abilities, ensuring clear and concise delivery of insights and solutions to
+                        stakeholders.</p>
                 </div>
             </div><br>
         </section>
@@ -366,7 +392,7 @@
 
         <!-- Projects Section -->
 
-        <section id="projects" class="text-center projects" >
+        <section id="projects" class="text-center projects">
             <br><br>
             <div class="row text-center" style="justify-content: center;">
                 <h1 class="font-style projects ">Projects</h1>
@@ -376,8 +402,11 @@
                         <div class="card">
                             <div class="card-body ">
                                 <h3 class="font-style my-4 ">Credit Card Financial Dashboard</h3>
-                                <p>Developed an interactive Power BI dashboard using transaction and customer data from a SQL database to provide real-time insights and streamlined the data processing and analysis for monitoring key performance metrics and trends.</p>
-                                <a href="https://app.powerbi.com/view?r=eyJrIjoiYzgzNjZlNjktOTMzNi00YzNlLThlMDQtZTk5YzgzODQzODczIiwidCI6IjJhYWZmMjkxLTNkYjItNGZlNy1hNzY3LWJlY2ZjZGM2ZjUxNiJ9" target="_blank" class="btn btn-primary my-4 ">View Project</a>
+                                <p>Developed an interactive Power BI dashboard using transaction and customer data from
+                                    a SQL database to provide real-time insights and streamlined the data processing and
+                                    analysis for monitoring key performance metrics and trends.</p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiYzgzNjZlNjktOTMzNi00YzNlLThlMDQtZTk5YzgzODQzODczIiwidCI6IjJhYWZmMjkxLTNkYjItNGZlNy1hNzY3LWJlY2ZjZGM2ZjUxNiJ9"
+                                    target="_blank" class="btn btn-primary my-4 ">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -385,22 +414,27 @@
                         <div class="card">
                             <div class="card-body ">
                                 <h3 class="font-style my-4 ">E-Commerce Sales Analysis</h3>
-                                <p>Developed and published an interactive Power BI report for e-commerce sales data, enabling real-time data analysis and visualization for improved decision-making.</p>
-                                <a href="https://app.powerbi.com/view?r=eyJrIjoiMzczY2FlZGUtNzIyZC00YzUzLTkyODItNDNjZmM4ZWVmYjhkIiwidCI6IjJhYWZmMjkxLTNkYjItNGZlNy1hNzY3LWJlY2ZjZGM2ZjUxNiJ9" target="_blank" class="btn btn-primary my-4 ">View Project</a>
+                                <p>Developed and published an interactive Power BI report for e-commerce sales data,
+                                    enabling real-time data analysis and visualization for improved decision-making.</p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiMzczY2FlZGUtNzIyZC00YzUzLTkyODItNDNjZmM4ZWVmYjhkIiwidCI6IjJhYWZmMjkxLTNkYjItNGZlNy1hNzY3LWJlY2ZjZGM2ZjUxNiJ9"
+                                    target="_blank" class="btn btn-primary my-4 ">View Project</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            <br>
+                <br>
                 <h2 class="mt-4">SQL</h2><br>
                 <div class="row text-center" style="justify-content: center;">
                     <div class="col-sm-4 mb-4 ">
                         <div class="card">
                             <div class="card-body ">
                                 <h3 class="font-style my-4 ">Music Store Analysis</h3>
-                                <p>Conducted in-depth analysis of a music store data using SQL to derive insights such as identifying senior employees, top-spending customers, and popular music genres by country.
+                                <p>Conducted in-depth analysis of a music store data using SQL to derive insights such
+                                    as identifying senior employees, top-spending customers, and popular music genres by
+                                    country.
                                 </p>
-                                <a href="https://github.com/ujjwal-dhiman-ai/music-store-analysis" target="_blank" class="btn btn-primary my-4 ">View Project</a>
+                                <a href="https://github.com/ujjwal-dhiman-ai/music-store-analysis" target="_blank"
+                                    class="btn btn-primary my-4 ">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -408,9 +442,12 @@
                         <div class="card">
                             <div class="card-body ">
                                 <h3 class="font-style my-4 ">Retail Store Analysis</h3>
-                                <p>Implemented an end-to-end data analytics ETL pipeline using Python, SQL and Kaggle to download, clean, and process a Kaggle dataset, load it into a PostgreSQL, and perform comprehensive data analysis, using SQL.
+                                <p>Implemented an end-to-end data analytics ETL pipeline using Python, SQL and Kaggle to
+                                    download, clean, and process a Kaggle dataset, load it into a PostgreSQL, and
+                                    perform comprehensive data analysis, using SQL.
                                 </p>
-                                <a href="https://github.com/ujjwal-dhiman-ai/retail-store-analysis" target="_blank" class="btn btn-primary my-4 ">View Project</a>
+                                <a href="https://github.com/ujjwal-dhiman-ai/retail-store-analysis" target="_blank"
+                                    class="btn btn-primary my-4 ">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -421,102 +458,121 @@
                         <div class="card">
                             <div class="card-body ">
                                 <h3 class="font-style my-4 ">CSV to PostgreSQL Data Pipeline</h3>
-                                <p>Developed a python data pipeline for uploading CSV files to a PostgreSQL database. Utilized Pandas for data processing, psycopg2 for database connectivity, and implemented dynamic table creation and data insertion. – Automated the process with a command-line interface for flexibility in insertion modes and schema selection.
+                                <p>Developed a python data pipeline for uploading CSV files to a PostgreSQL database.
+                                    Utilized Pandas for data processing, psycopg2 for database connectivity, and
+                                    implemented dynamic table creation and data insertion. – Automated the process with
+                                    a command-line interface for flexibility in insertion modes and schema selection.
                                 </p>
-                                <a href="https://github.com/ujjwal-dhiman-ai/csv-to-postgres" target="_blank" class="btn btn-primary my-4 ">View Project</a>
+                                <a href="https://github.com/ujjwal-dhiman-ai/csv-to-postgres" target="_blank"
+                                    class="btn btn-primary my-4 ">View Project</a>
                             </div>
                         </div>
                     </div>
-                    </div>
-                    </div>
-            </div>
-
-        </section>
-        <hr>
-
-
-        <!-- Experience Section -->
-
-        <section id="experience" class="text-justified">
-            <br><br><br>
-            <h1 class="font-style my-4 text-center">Experience</h1>
-            <div class="row">
-                
-                <div class="col mx-4">
-                    <p class="fs-3">Data Analyst</p>
-                    <p class="fst-italic fw-bold">May 2023 - January 2024</p>
-                    <p class="fw-bold">MapUp</p>
-                    <p class="text-justified">I have leveraged Python scripts to automate manual tasks, significantly enhancing operational efficiency. I designed and implemented data flows using tools like Prefect, improving process flow visualization and clarity.</p>
-                    <p class="text-justified">Conducted API testing with Postman ensured data validation and integrity checks. I managed projects for new initiatives, creating and maintaining detailed process documentation.</p>
-                    <p class="text-justified">Additionally, I developed an automated ETL pipeline using cron jobs and GitHub Actions. Leading the Alternate Trip Route Analysis project, I optimized routes for toll and fuel cost savings, potentially saving $4M annually.</p>
-                    <p class="text-justified">Through geospatial analysis with QGIS for the Zip Code Toll Cost Analysis, I visualized regional toll cost disparities. I implemented a Data Quality Check Framework using Python and Great Expectations, ensuring data integrity and accuracy.
-                    </p>
-                    <p class="text-justified">Lastly, I developed and automated a Toll Data Pipeline to extract, transform and load toll data.</p>
-                </div>
-            </div><br>
-        </section>
-        <hr>
-
-        <!-- Education Section -->
-
-        <section id="education" class="text-justified">
-            <br><br><br>
-            <h1 class="font-style my-4 text-center">Education</h1>
-            <div class="row">
-                
-                <div class="col-sm-8 mx-4">
-                    <p class="fs-3">B.Tech in Computer Science and Engineering</p>
-                    <p class="fst-italic fw-bold">August 2019 - June 2023</p>
-                    <p class="fw-bold">Quantum University, Roorkee</p>
-                </div>
-            </div><br>
-        </section>
-
-        <!-- Resume Section -->
-<hr>
-        <section id="resume" class="text-justified about mt-4 text-center">
-            <br>
-            <h1 class="font-style mb-4">Resume</h1>
-            <div class="row">
-                <div class="col text-center">
-                    <a href="https://drive.google.com/file/d/111Oj96qfkt5pDYjNiZ2bNouolQ0DH7wO/view" target="_blank" class="btn btn-primary mb-4 ">Download My Resume</a>
                 </div>
             </div>
-        </section>
-<hr>
-        <!-- Contact Section -->
+    </div>
+
+    </section>
+    <hr>
 
 
-        <section id="Contact" class="Contact text-center">
-            <br>
-            <h1 class="font-style mb-4">Contact</h1>
-            <!-- <br> -->
-            <div class="row">
-                <div class="col-sm-3 mt-auto mb-auto">
-                    <p class=" links ">
-                        <i class="fa fa-envelope "><span class="address"><a href="mailto:ujjwaldhimanai@gmail.com" class="text-decoration-none">ujjwaldhimanai@gmail.com</a></span></i>
+    <!-- Experience Section -->
 
-                </div>
-                <div class="col-sm-3 mt-auto mb-auto">
-                    <p class=" links ">
-                        <i class="fa fa-linkedin"><span class="address "><a href="https://www.linkedin.com/in/ujjwal-dhiman-ai/" target="_blank" class="text-decoration-none">Linkedin</a></span></i>
-                    </p>
+    <section id="experience" class="text-justified">
+        <br><br><br>
+        <h1 class="font-style my-4 text-center">Experience</h1>
+        <div class="row">
 
-                </div>
-                <div class="col-sm-3 mt-auto mb-auto">
-                    <p class=" links ">
-                        <i class="fa fa-github"><span class="address "><a href="https://github.com/ujjwal-dhiman-ai" target="_blank" class="text-decoration-none">GitHub</a></span></i>
-                    </p>
+            <div class="col mx-4">
+                <p class="fs-3">Data Analyst</p>
+                <p class="fst-italic fw-bold">May 2023 - January 2024</p>
+                <p class="fw-bold">MapUp</p>
+                <p class="text-justified">I have leveraged Python scripts to automate manual tasks, significantly
+                    enhancing operational efficiency. I designed and implemented data flows using tools like Prefect,
+                    improving process flow visualization and clarity.</p>
+                <p class="text-justified">Conducted API testing with Postman ensured data validation and integrity
+                    checks. I managed projects for new initiatives, creating and maintaining detailed process
+                    documentation.</p>
+                <p class="text-justified">Additionally, I developed an automated ETL pipeline using cron jobs and GitHub
+                    Actions. Leading the Alternate Trip Route Analysis project, I optimized routes for toll and fuel
+                    cost savings, potentially saving $4M annually.</p>
+                <p class="text-justified">Through geospatial analysis with QGIS for the Zip Code Toll Cost Analysis, I
+                    visualized regional toll cost disparities. I implemented a Data Quality Check Framework using Python
+                    and Great Expectations, ensuring data integrity and accuracy.
+                </p>
+                <p class="text-justified">Lastly, I developed and automated a Toll Data Pipeline to extract, transform
+                    and load toll data.</p>
+            </div>
+        </div><br>
+    </section>
+    <hr>
 
-                </div>
-                <div class="col-sm-3 mt-auto mb-auto">
-                    <p class=" links ">
-                        <i class="fa fa-phone-alt"><span class="address "><a href="tel:+91-9389310752"  class="text-decoration-none">+91-9389310752</a>
+    <!-- Education Section -->
+
+    <section id="education" class="text-justified">
+        <br><br><br>
+        <h1 class="font-style my-4 text-center">Education</h1>
+        <div class="row">
+
+            <div class="col-sm-8 mx-4">
+                <p class="fs-3">B.Tech in Computer Science and Engineering</p>
+                <p class="fst-italic fw-bold">August 2019 - June 2023</p>
+                <p class="fw-bold">Quantum University, Roorkee</p>
+            </div>
+        </div><br>
+    </section>
+
+    <!-- Resume Section -->
+    <hr>
+    <section id="resume" class="text-justified about mt-4 text-center">
+        <br>
+        <h1 class="font-style mb-4">Resume</h1>
+        <div class="row">
+            <div class="col text-center">
+                <a href="https://drive.google.com/file/d/111Oj96qfkt5pDYjNiZ2bNouolQ0DH7wO/view" target="_blank"
+                    class="btn btn-primary mb-4 ">Download My Resume</a>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Contact Section -->
+
+
+    <section id="Contact" class="Contact text-center">
+        <br>
+        <h1 class="font-style mb-4">Contact</h1>
+        <!-- <br> -->
+        <div class="row">
+            <div class="col-sm-3 mt-auto mb-auto">
+                <p class=" links ">
+                    <i class="fa fa-envelope "><span class="address"><a href="mailto:ujjwaldhimanai@gmail.com"
+                                class="text-decoration-none">ujjwaldhimanai@gmail.com</a></span></i>
+
+            </div>
+            <div class="col-sm-3 mt-auto mb-auto">
+                <p class=" links ">
+                    <i class="fa fa-linkedin"><span class="address "><a
+                                href="https://www.linkedin.com/in/ujjwal-dhiman-ai/" target="_blank"
+                                class="text-decoration-none">Linkedin</a></span></i>
+                </p>
+
+            </div>
+            <div class="col-sm-3 mt-auto mb-auto">
+                <p class=" links ">
+                    <i class="fa fa-github"><span class="address "><a href="https://github.com/ujjwal-dhiman-ai"
+                                target="_blank" class="text-decoration-none">GitHub</a></span></i>
+                </p>
+
+            </div>
+            <div class="col-sm-3 mt-auto mb-auto">
+                <p class=" links ">
+                    <i class="fa fa-phone-alt"><span class="address "><a href="tel:+91-9389310752"
+                                class="text-decoration-none">+91-9389310752</a>
                         </span></i>
-                </div>
-                
-            </div><br>
-        </section>
+            </div>
+
+        </div><br>
+    </section>
     </div>
     </div>
 
